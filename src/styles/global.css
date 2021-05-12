@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP&display=swap');
+
+main {
+    height: 100vh;
+    min-width: 980px;
+    color: #353a46;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+}
+header {
+    position: relative;
+    font-family: 'Dela Gothic One', cursive;
+    height: 52px;
+    text-align: center;
+    box-shadow: 0 2px 3px #aabef2;
+}
+header h1 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+header h1 object {
+    height: 1.8rem;
+    margin-left: 0.3rem;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    list-style-type: none;
+}
+header ul li button {
+    color: #f5f5f5;
+    font-size: 1rem;
+    /* font-weight: normal; */
+    background-color: #5376cd;
+    margin-left: 1rem;
+    padding: 0.3rem 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    transition: 0.25s ease-out;
+}
+header ul li button:hover {
+    opacity: 0.7;
+}
+.contents {
+    flex: 1 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.side_bar {
+    flex: 0 0 300px;
+    padding: 1rem;
+}
+.side_bar h2 {
+    border-bottom: 1px dotted #3a445c;
+}
+.side_bar pre {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #f5f5f5;
+    background-color: #353a46;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+.editor {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.editor textarea {
+    flex: 0 0 50%;
+    padding: 1rem;
+    height: 100%;
+    resize: none;
+    background-color: #fbfbfb;
+    border: 0;
+}
+.editor textarea:focus {
+    outline: 0;
+}
+.output {
+    padding: 1rem;
+    line-height: 2rem;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+.output h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.output h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.output h3 {
+    color: #c0c0c0;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.output p {
+    margin-bottom: 1rem;
+}
+.output ruby rt {
+    text-align: left;
+}
